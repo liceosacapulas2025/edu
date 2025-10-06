@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   
+    <title>Historia | Liceo Sosapoblante: Forjando el Futuro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <h1 class="animated-heading">HISTORIA DEL CENTRO EDUCATIVO LICEO SACAPULAS</h1>
+        <h2>Historia: Forjando un Legado Educativo</h2>
+    </header>
+
+    <main>
+      
+        <article class="history-section foundation">
+            <h3 class="flotando">Nuestros Inicios</h3>
+            <div class="content-wrapper">
+                <p>
+En el mes de marzo del año 2001, la junta directiva de la comunidad lingüística Sakapulteka de la Academia de Lenguas Mayas de Guatemala,
+ Constituida por las siguientes personas: Presidente Jesús Aceytuno Felipe, vicepresidente Ofelia Andrea Solís Aceytuno, Secretaria Justa Rufina 
+ López Aceytuno, Tesorera María Dionicio López,  Vocal primero Pedro Vásquez Aceytuno, Vocal segundo Cruz Pajarito Lancero 2°,
+  dispusieron crear un centro educativo para ayudar a familias necesitadas, entre ellos jóvenes de ambos sexos, y fortalecer el recurso humano
+   para el idioma Sakapulteko, como objetivo principal del proyecto.
+                </p>
+                <figure class="image-box fadeIn-on-scroll">
+                    <img src="cofradia.jpg" alt="Antigua fotografía de la fundación del Liceo Sosapoblante">
+                    <figcaption>Los primeros días donde todo comenzó.</figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <article class="history-section growth">
+            <h3>Nuestro Crecimiento🌱</h3>
+            <div class="content-wrapper reversed">
+                <figure class="image-box fadeIn-on-scroll">
+                    <img src="licmo.jpg" alt="Foto del Liceo Sosapoblante después de su expansión o nuevo edificio">
+                    <figcaption>Con el paso de los años el centro educativo liceo sacapulas fue ampliando las instalaciones y trasladandonos a otro lugar.</figcaption>
+                </figure>
+                <p>
+Dentro de las actividades, se realizó un diagnóstico a personas individuales e instituciones locales y se determinó que era necesario 
+la carrera de magisterio Bilingüe Intercultural para implementar el idioma Sakapulteko dentro del pensum de estudios. Así fue como se
+ iniciaron los trámites ante las autoridades locales de educación y salud, así mismo se convocó a reuniones masivas y se inicia la recepción
+  de expedientes y seleccionar a los catedráticos para optar a cargos y cursos que serán asignados para impartir y para la dirección se hizo 
+  entre tres personas, saliendo electo al Profesor de Educación Media Onofre Felipe Gómez, como director, quien funge hasta la fecha, iniciando
+   los trámites ante las autoridades de la Dirección Departamental de Educación y el Ministerio de Educación, con fecha 27 de diciembre del año
+    2001, fue emitida la Resolución Ministerial No. 151-2001, donde se autoriza la creación y funcionamiento del centro educativo con el nombre
+     de “Liceo Sacapulas” la carrera de Magisterio de Educación Primaria Bilingüe Intercultural (Sakapulteco-Español) con el pensum de estudios
+      de la Malla Curricular.
+                </p>
+            </div>
+        </article>
+
+        <article class="history-section future">
+            <h3>Nuestro Presente y Futuro💡</h3>
+            <div class="content-wrapper">
+                <p>
+               A partir del 2 de enero de 2002, se iniciaron las inscripciones para el ciclo escolar y las clases respectivas, instalándose 
+               en la cofradía San Francisco por no contar con local propio, gracias a los señores de la cofradía de aquel entonces quienes 
+               accedieron el espacio para que este centro educativo diera luz verde a las actividades y clases, con el apoyo de los catedráticos.
+                Posteriormente se gestionó la carrera de Perito Contador con Orientación en Computación, siendo autorizada bajo la Resolución No.
+                 156-2002, de fecha 16 de agosto de 2002, quien fue gestionada por el señor director del Plantel. Siempre con el lema de “Orden y
+                  Disciplina”.
+
+             Hasta el año 2005, la junta directiva se constituyó en una Asociación K’aslemal Qa tinimit que quiere decir (Bienestar del Pueblo)
+              como el presidente Pedro Vásquez Aceytuno, Secretario Jesús Aceytuno Felipe ,Tesorera Ofelia Andrea Solis Aceytuno, con el objetivo de 
+              captar fondos para el mismo centro educativo y en marzo del año 2007, se trasladó Liceo Sacapulas, al Colegio Monte de los Olivos por
+               su crecimiento en población escolar y para dar un mejor servicio a la comunidad educativa y se ha entregado varias promociones al pueblo...................
+
+                </p>
+                <figure class="image-box fadeIn-on-scroll">
+                    <img src="jh.jpg" alt="Foto actual de estudiantes o la fachada moderna del colegio">
+                    <figcaption>Hoy somos un centro educativo reconocido por su excelencia y compromiso con las nuevas generaciones.</figcaption>
+                </figure>
+            </div>
+        </article>
+
+    </main>
+
+   
+
+  <!-- ACTIVITIES -->
+  <section class="activities">
+    <h2>CONOCE NUESTRAS INSTALACIONES</h2>
+    
+    <div class="grid">
+      <div class="card"><img src="jh.jpg"></div>
+      <div class="card"><img src="imagen.jpg"></div>
+      <div class="card"><img src="dd.jpg"></div>
+      <div class="card"><img src="ii.jpg"></div>
+      <div class="card"><img src="ee.jpg"></div>
+      <div class="card"><img src="345.jpg" ></div>
+    </div>
+  </section>
+
+<script>
+        // Función para verificar si un elemento está visible en la pantalla
+        function checkVisibility() {
+            const elements = document.querySelectorAll('.fadeIn-on-scroll');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                // Si el elemento está en la ventana (visible)
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    el.classList.add('is-visible');
+                }
+            });
+        }
+
+        // Ejecutar al cargar la página y al hacer scroll
+        window.addEventListener('load', checkVisibility);
+        window.addEventListener('scroll', checkVisibility);
+    </script>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+    
+    

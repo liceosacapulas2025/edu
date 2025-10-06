@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Galería Equilibrada del Establecimiento Educativo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="gale.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header con pulse adicional -->
+    <header class="bg-gradient-to-r from-blue-300 to-blue-600 text-center py-10 animate-pulse">
+        <h1 class="text-4xl font-bold">Galeria</h1>
+        <p class="text-lg mt-2">Aqui puedes observar todas nuetras actividades </p>
+    </header>
+
+    <!-- Gallery -->
+    <section class="py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Image 1 -->
+                <div class="gallery-item" onclick="openModal(1)">
+                    <img src="123.jpg" alt="Campus universitario moderno con edificaciones tech neón iluminadas, estudiantes multiculturales en jardines holísticos con paneles solares vibrantes, creando atmósfera educativa energética vanguardista" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="gallery-item" onclick="openModal(2)">
+                    <img src="11.jpg" alt="Aula holográfica con estudiantes manejando robots pedagógicos digitales, paredes dinámicas coloridas favoreciendo aprendizaje inmersivo avanzado tech" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="gallery-item" onclick="openModal(3)">
+                    <img src="22.jpg" alt="Lab explosivo con químicos luminosos produciendo fuegos artificiales colores, microscopios tech revelando mundos microscópicos vibrantes para viajes científicos virtuales" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="gallery-item" onclick="openModal(4)">
+                    <img src="tengnologia.jpg" alt="Biblioteca neón con estanterías LED arcoíris, mesas virtuales libros animados, estudiantes en realidades mixtas proyectores láser paisajes conocimiento" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="gallery-item" onclick="openModal(5)">
+                    <img src="33.jpg" alt="Parques fuentes multicolores cascadas luminosas, esculturas interactivas, estudiantes yoga árboles bioluminiscentes senderos brillo aventura" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="gallery-item" onclick="openModal(6)">
+                    <img src="44.jpg" alt="Auditorio escenarios holográficos presentaciones virtuales explosivas, audiencias AR pantallas ondulantes conferencistas conectando públicos globales real time" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+           
+        <!-- Image 7 -->
+                <div class="gallery-item" onclick="openModal(7)">
+                    <img src="55.jpg" alt="Campus universitario moderno con edificaciones tech neón iluminadas, estudiantes multiculturales en jardines holísticos con paneles solares vibrantes, creando atmósfera educativa energética vanguardista" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       
+                    </div>
+                </div>
+                <!-- Image 8 -->
+                <div class="gallery-item" onclick="openModal(8)">
+                    <img src="66.jpg" alt="Campus universitario moderno con edificaciones tech neón iluminadas, estudiantes multiculturales en jardines holísticos con paneles solares vibrantes, creando atmósfera educativa energética vanguardista" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+                <!-- Image 9 -->
+                <div class="gallery-item" onclick="openModal(9)">
+                    <img src="77.jpg" alt="Campus universitario moderno con edificaciones tech neón iluminadas, estudiantes multiculturales en jardines holísticos con paneles solares vibrantes, creando atmósfera educativa energética vanguardista" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       
+                    </div>
+                </div>
+                <!-- Image 10 -->
+                <div class="gallery-item" onclick="openModal(10)">
+                    <img src="88.jpg" alt="Campus universitario moderno con edificaciones tech neón iluminadas, estudiantes multiculturales en jardines holísticos con paneles solares vibrantes, creando atmósfera educativa energética vanguardista" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       
+                    </div>
+                </div>
+                <!-- Image 11 -->
+                <div class="gallery-item" onclick="openModal(11)">
+                    <img src="99.jpg" alt="Campus universitario moderno con edificaciones tech neón iluminadas, estudiantes multiculturales en jardines holísticos con paneles solares vibrantes, creando atmósfera educativa energética vanguardista" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                        
+                    </div>
+                </div>
+                <!-- Image 12 -->
+                <div class="gallery-item" onclick="openModal(12)">
+                    <img src="bb.jpg" alt="Campus universitario moderno con edificaciones tech neón iluminadas, estudiantes multiculturales en jardines holísticos con paneles solares vibrantes, creando atmósfera educativa energética vanguardista" class="w-full h-48 object-cover rounded-lg" />
+                    <div class="overlay">
+                       <p>DESARROLADORES WEB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="relative">
+            <img src="123.jpg" alt="Campus... (detallado)" />
+            <span class="close" onclick="closeModal(1)">&times;</span>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="relative">
+            <img src="11.jpg" alt="Aula... (detallado)" />
+            <span class="close" onclick="closeModal(2)">&times;</span>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="relative">
+            <img src="22.jpg" alt="Lab... (detallado)" />
+            <span class="close" onclick="closeModal(3)">&times;</span>
+        </div>
+    </div>
+    <div id="modal4" class="modal">
+        <div class="relative">
+            <img src="tengnologia.jpg" alt="Biblioteca... (detallado)" />
+            <span class="close" onclick="closeModal(4)">&times;</span>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="relative">
+            <img src="33.jpg" alt="Parques... (detallado)" />
+            <span class="close" onclick="closeModal(5)">&times;</span>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="relative">
+            <img src="44.jpg" alt="Auditorio... (detallado)" />
+            <span class="close" onclick="closeModal(6)">&times;</span>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="relative">
+            <img src="55.jpg" alt="Auditorio... (detallado)" />
+            <span class="close" onclick="closeModal(7)">&times;</span>
+        </div>
+    </div>
+     <div id="modal8" class="modal">
+        <div class="relative">
+            <img src="66.jpg" alt="Auditorio... (detallado)" />
+            <span class="close" onclick="closeModal(8)">&times;</span>
+        </div>
+    </div>
+      <div id="modal9" class="modal">
+        <div class="relative">
+            <img src="77.jpg" alt="Auditorio... (detallado)" />
+            <span class="close" onclick="closeModal(9)">&times;</span>
+        </div>
+    </div>
+      <div id="modal10" class="modal">
+        <div class="relative">
+            <img src="88.jpg" alt="Auditorio... (detallado)" />
+            <span class="close" onclick="closeModal(10)">&times;</span>
+        </div>
+    </div>
+     <div id="modal11" class="modal">
+        <div class="relative">
+            <img src="99.jpg" alt="Auditorio... (detallado)" />
+            <span class="close" onclick="closeModal(11)">&times;</span>
+        </div>
+    </div>
+      <div id="modal12" class="modal">
+        <div class="relative">
+            <img src="bb.jpg" alt="Auditorio... (detallado)" />
+            <span class="close" onclick="closeModal(12)">&times;</span>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-300 to-blue-700 text-center py-6">
+        <p>© 2026 Liceo Sacapulas .</p>
+    </footer>
+  <script>
+        function openModal(n) {
+            document.getElementById('modal' + n).style.display = 'flex';
+        }
+        function closeModal(n) {
+            document.getElementById('modal' + n).style.display = 'none';
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.modal').forEach(m => m.addEventListener('click', (e) => {
+                if (e.target === m) closeModal(m.id.slice(-1));
+            }));
+        });
+    </script>
+    
+</body>
+</html>
